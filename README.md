@@ -28,7 +28,7 @@ To use this project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/sachinacharya/human-horse-detector.git
+    git clone https://github.com/sachinacharyaa/human-horse-detector.git
     ```
 2. Open the `human_horse_detector.ipynb` notebook in Google Colab.
 3. Follow the instructions in the notebook to set up the environment, download the dataset, and train the model.
