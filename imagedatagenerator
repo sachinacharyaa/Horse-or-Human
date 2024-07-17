@@ -1,0 +1,19 @@
+train_dir = '/content/horse-or-human/train'
+image_size = (300, 300)
+batch_size = 32
+
+train_datagen = ImageDataGenerator(rescale=1/255)
+train_generator = train_datagen.flow_from_directory(
+    train_dir,
+    target_size = image_size,
+    batch_size = batch_size,
+    class_mode = 'binary'
+)
+
+test_dir = '/content/horse-or-human/test'
+test_datagen = ImageDataGenerator(rescale=1/255)
+test_generator = test_datagen.flow_from_directory(
+    test_dir,
+    target_size = image_size,
+    batch_size = batch_size,
+    class_mode = 'binary'
